@@ -17,10 +17,6 @@
     "start:dev-local": "env-cmd -f config/dev.json babel-node src/server/app.js"
   },
   "dependencies": {
-    "@azure/core-rest-pipeline": "1.11.0",
-    "@azure/identity": "^4.0.0",
-    "@azure/keyvault-secrets": "4.7.0",
-    "@babel/polyfill": "^7.2.5",
     "ajv": "^8.17.1",
     "axios": "^0.27.2",
     "babel-cli": "^6.26.0",
@@ -95,18 +91,7 @@
     "winston-daily-rotate-file": "^1.3.0"
   },
   "devDependencies": {
-    "@pmmmwh/react-refresh-webpack-plugin": "^0.5.15",
-    "browserify": "^13.1.1",
-    "chai": "^3.5.0",
-    "chai-http": "^4.2.0",
-    "chai-json-schema": "^1.5.0",
-    "cpx": "^1.5.0",
-    "css-loader": "^0.28.10",
-    "env-cmd": "^10.1.0",
-    "enzyme": "^3.3.0",
-    "enzyme-adapter-react-16": "^1.1.1",
-    "eslint": "^4.19.1",
-    "eslint-config-airbnb-base": "^12.1.0",
+    
     "eslint-loader": "^2.0.0",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jest": "^21.26.1",
@@ -131,10 +116,7 @@
     "webpack-cli": "^3.3.0",
     "webpack-dev-server": "^3.11.0"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://rc-github.deltads.ent/DEVPROJECTS/dd-pad-web.git"
-  },
+ 
   "keywords": [
     "Delta",
     "Dental",
@@ -142,10 +124,5 @@
     "solution",
     "Application"
   ],
-  "author": "Rajeev",
-  "license": "ISC",
-  "engines": {
-    "npm": ">=6.0.0",
-    "node": ">=14.0.0"
-  }
+
 }
