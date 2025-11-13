@@ -1,0 +1,24 @@
+{
+  "name": "vulnerable-demo",
+  "version": "1.0.0",
+  "description": "Intentionally vulnerable Node.js project for testing Trivy/Aqua scanner",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"No tests configured\""
+  },
+  "dependencies": {
+    "express": "4.16.0",               
+    "lodash": "4.17.15",               
+    "mongoose": "5.4.0",               // outdated version
+    "handlebars": "4.0.5",             // prototype pollution (CVE-2019-19919)
+    "moment": "2.18.0",                // ReDoS (CVE-2017-18214)
+    "jquery": "3.4.0",                 // XSS issue (CVE-2020-11023)
+    "debug": "2.6.8",                  // ReDoS (CVE-2017-1000188)
+    "minimist": "1.2.0",               // prototype pollution (CVE-2021-44906)
+    "serialize-javascript": "2.1.0",   // XSS (CVE-2019-16769)
+    "morgan": "1.7.0",                 // outdated logging lib
+    "jsonwebtoken": "8.1.0",           // signature validation bypass (CVE-2019-20149)
+    "ansi-regex": "4.1.0"              // ReDoS (CVE-2021-3807)
+  }
+}
